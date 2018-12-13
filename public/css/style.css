@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(/img/BG.jpg);
+  color: #fe7734;
+  font-family: 'Poppins';
+}
+
+.container {
+  text-align: center;
+
+}
+
+ul {
+  text-align: right;
+  padding-right: 100px;
+}
+
+li {
+  display: inline;
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid #fe7734;
+}
+
+li:hover {
+  border-top: 1px solid #fe7734;
+  border-bottom: 0;
+  transition: 1s ease;
+}
+
+a {
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #fe7734;
+  font-size: 24px;
+  transition: 350ms ease-in;
+}
+
+
+a:hover {
+  letter-spacing: 1px;
+  transition: 350ms ease-out;
+}
+
+h1 {
+  text-align: left;
+  color: #fe7734;
+  position: absolute;
+  left: 7%;
+  top: -1.6%;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 50px;
+
+}
+
+.main {
+  width: 280px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fe7734;
+}
+
+.box {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #fe7734;
+}
+
+.box i {
+  width: 26px;
+  float: left;
+  text-align: center;
+  color: #fe7734;
+}
+
+.box input {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+h2 {
+  border-bottom: 1px solid #fe7734;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  padding-right: 10px;
+
+  color: #fe7734;
+  text-align: center;
+
+}
+
+.btn {
+  width: 100%;
+  background: none;
+  border: 2px solid #fe7734;
+  color: #fe7734;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+.btn-2 {
+  padding: 5px 0px;
+  letter-spacing: 0;
+  font-size: 17px;
+  color: rgb(229, 233, 27);
+  transition: 350ms ease-in-out;
+}
+
+.btn-2:hover {
+  letter-spacing: 1px;
+  border-top: 1px solid #fe7734;
+  border-bottom: 1px solid #fe7734;
+  color: #fe7734;
+  transition: 350ms ease-out;
+}
+
+p {
+  font-size: 18px;
+}

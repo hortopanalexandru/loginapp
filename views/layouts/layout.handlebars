@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav">
+                    <li role="presentation"><a href="/users/about">About us</a></li>
+                    {{#if user}}
+                    <li role="presentation"><a href="/users/logout">Log out</a></li>
+
+                    {{else}}
+
+                    <li role="presentation"><a href="/users/login">Log in</a></li>
+                    <li role="presentation"><a href="/users/register">Sign in</a></li>
+
+                    {{/if}}
+                </ul>
+            </nav>
+            <h1 class="logo">Sometimes</h1>
+        </div>
+
+
+
+        <div class="main">
+            {{#if success_msg}}
+            <div class="alert-succes">{{success_msg}}</div>
+            {{/if}}
+
+            {{#if error_msg}}
+            <div class="alert-error">{{error_msg}}</div>
+            {{/if}}
+
+            {{#if error}}
+            <div class="alert-erro">{{error}}</div>
+            {{/if}}
+
+            {{{body}}}
+        </div>
+    </div>
+</body>
+
+</html>
